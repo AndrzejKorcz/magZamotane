@@ -1,0 +1,117 @@
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\kody_kreskowe.mdf
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\kody_kreskowe_log.ldf
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.exe.config
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.exe
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csprojResolveAssemblyReference.cache
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.Properties.Resources.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csproj.GenerateResource.Cache
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csproj.CoreCompileInputs.cache
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.exe
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.Design.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.Fonts.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Dapper.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Dapper.xml
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Core.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.DataAccess.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Services.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Autofac.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Core.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.DataAccess.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Services.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Autofac.xml
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmDashboard.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucDashboard.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucProduct.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucBackup.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\DotNetZip.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\DotNetZip.xml
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucSale.resources
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucWebBrowser.resources
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucBarCode.resources
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Zen.Barcode.Core.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportSource.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.Shared.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.Windows.Forms.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\FlashControlV71.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\ShockwaveFlashObjects.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\stdole.dll
+e:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmSplashScreen.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmPrint.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\bin\Debug\Tulpep.NotificationWindow.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmLoadData.resources
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmWait.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\kody_kreskowe.mdf
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\kody_kreskowe_log.ldf
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.exe.config
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.exe
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.Shared.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Dapper.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\DotNetZip.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\FlashControlV71.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Core.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.DataAccess.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Services.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.Design.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MetroFramework.Fonts.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Tulpep.NotificationWindow.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Zen.Barcode.Core.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Autofac.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\ShockwaveFlashObjects.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\stdole.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Core.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.DataAccess.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\MagZamotane4.Services.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Dapper.xml
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\DotNetZip.xml
+D:\Magazyn4\MagZamotane4\MagZamotane4\bin\Debug\Autofac.xml
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csprojResolveAssemblyReference.cache
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmDashboard.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmLoadData.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmPrint.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmSplashScreen.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.frmWait.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.Properties.Resources.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucBackup.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucBarCode.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucDashboard.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucProduct.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucSale.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.ucWebBrowser.resources
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csproj.GenerateResource.cache
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csproj.CoreCompileInputs.cache
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.csproj.CopyComplete
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.exe
+D:\Magazyn4\MagZamotane4\MagZamotane4\obj\Debug\MagZamotane4.pdb

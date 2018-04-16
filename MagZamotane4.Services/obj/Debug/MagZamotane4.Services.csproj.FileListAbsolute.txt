@@ -1,0 +1,29 @@
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Services.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Services.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\Autofac.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Core.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.DataAccess.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\Dapper.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Core.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.DataAccess.pdb
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\Autofac.xml
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\bin\Debug\Dapper.xml
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.csprojResolveAssemblyReference.cache
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.csproj.CoreCompileInputs.cache
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.dll
+E:\Dane\Programowanie\Programy C#\Visual Studio\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Services.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Services.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\Autofac.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Core.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.DataAccess.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\Dapper.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.Core.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\MagZamotane4.DataAccess.pdb
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\Autofac.xml
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\bin\Debug\Dapper.xml
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.csprojResolveAssemblyReference.cache
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.csproj.CoreCompileInputs.cache
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.csproj.CopyComplete
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.dll
+D:\Magazyn4\MagZamotane4\MagZamotane4.Services\obj\Debug\MagZamotane4.Services.pdb
