@@ -22,21 +22,21 @@ namespace MagZamotane4
 
         private void Application_ApplicationExit(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
-            Thread.Sleep(10);
+            //timer1.Enabled = false;
+            //Thread.Sleep(10);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (metroProgressSpinner.Value < 100)
-            {
-                metroProgressSpinner.Value += 1;
-            } else metroProgressSpinner.Value = 0;            
+            //if (metroProgressSpinner.Value < 100)
+            //{
+            //    metroProgressSpinner.Value += 1;
+            //} else metroProgressSpinner.Value = 0;            
         }
 
         private void frmLoadData_Load(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
+            //timer1.Enabled = true;
         }
     }
 }

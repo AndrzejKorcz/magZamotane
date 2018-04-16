@@ -90,7 +90,6 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.lnkRefresh = new MetroFramework.Controls.MetroLink();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
@@ -874,7 +873,7 @@
             this.kodDataGridViewTextBoxColumn.HeaderText = "Kod";
             this.kodDataGridViewTextBoxColumn.Name = "kodDataGridViewTextBoxColumn";
             this.kodDataGridViewTextBoxColumn.ReadOnly = true;
-            this.kodDataGridViewTextBoxColumn.Width = 50;
+            this.kodDataGridViewTextBoxColumn.Width = 61;
             // 
             // Print
             // 
@@ -890,7 +889,7 @@
             this.nazwaDataGridViewTextBoxColumn.HeaderText = "Nazwa";
             this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
             this.nazwaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nazwaDataGridViewTextBoxColumn.Width = 64;
+            this.nazwaDataGridViewTextBoxColumn.Width = 75;
             // 
             // cenaNettoDataGridViewTextBoxColumn
             // 
@@ -898,7 +897,7 @@
             this.cenaNettoDataGridViewTextBoxColumn.HeaderText = "Cena netto";
             this.cenaNettoDataGridViewTextBoxColumn.Name = "cenaNettoDataGridViewTextBoxColumn";
             this.cenaNettoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cenaNettoDataGridViewTextBoxColumn.Width = 80;
+            this.cenaNettoDataGridViewTextBoxColumn.Width = 91;
             // 
             // cenaBruttoDataGridViewTextBoxColumn
             // 
@@ -906,7 +905,7 @@
             this.cenaBruttoDataGridViewTextBoxColumn.HeaderText = "Cena brutto";
             this.cenaBruttoDataGridViewTextBoxColumn.Name = "cenaBruttoDataGridViewTextBoxColumn";
             this.cenaBruttoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cenaBruttoDataGridViewTextBoxColumn.Width = 85;
+            this.cenaBruttoDataGridViewTextBoxColumn.Width = 96;
             // 
             // cenaDataGridViewTextBoxColumn
             // 
@@ -914,7 +913,7 @@
             this.cenaDataGridViewTextBoxColumn.HeaderText = "Cena sklepu";
             this.cenaDataGridViewTextBoxColumn.Name = "cenaDataGridViewTextBoxColumn";
             this.cenaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cenaDataGridViewTextBoxColumn.Width = 85;
+            this.cenaDataGridViewTextBoxColumn.Width = 96;
             // 
             // iloscDataGridViewTextBoxColumn
             // 
@@ -922,7 +921,7 @@
             this.iloscDataGridViewTextBoxColumn.HeaderText = "Ilość";
             this.iloscDataGridViewTextBoxColumn.Name = "iloscDataGridViewTextBoxColumn";
             this.iloscDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iloscDataGridViewTextBoxColumn.Width = 53;
+            this.iloscDataGridViewTextBoxColumn.Width = 64;
             // 
             // wartoscDataGridViewTextBoxColumn
             // 
@@ -930,7 +929,7 @@
             this.wartoscDataGridViewTextBoxColumn.HeaderText = "Wartość";
             this.wartoscDataGridViewTextBoxColumn.Name = "wartoscDataGridViewTextBoxColumn";
             this.wartoscDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wartoscDataGridViewTextBoxColumn.Width = 72;
+            this.wartoscDataGridViewTextBoxColumn.Width = 83;
             // 
             // jednostkaDataGridViewTextBoxColumn
             // 
@@ -938,7 +937,7 @@
             this.jednostkaDataGridViewTextBoxColumn.HeaderText = "Jednostka";
             this.jednostkaDataGridViewTextBoxColumn.Name = "jednostkaDataGridViewTextBoxColumn";
             this.jednostkaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.jednostkaDataGridViewTextBoxColumn.Width = 82;
+            this.jednostkaDataGridViewTextBoxColumn.Width = 93;
             // 
             // vatDataGridViewTextBoxColumn
             // 
@@ -946,7 +945,7 @@
             this.vatDataGridViewTextBoxColumn.HeaderText = "Podatek Vat";
             this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
             this.vatDataGridViewTextBoxColumn.ReadOnly = true;
-            this.vatDataGridViewTextBoxColumn.Width = 84;
+            this.vatDataGridViewTextBoxColumn.Width = 95;
             // 
             // marzaDataGridViewTextBoxColumn
             // 
@@ -954,7 +953,7 @@
             this.marzaDataGridViewTextBoxColumn.HeaderText = "Marża";
             this.marzaDataGridViewTextBoxColumn.Name = "marzaDataGridViewTextBoxColumn";
             this.marzaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.marzaDataGridViewTextBoxColumn.Width = 61;
+            this.marzaDataGridViewTextBoxColumn.Width = 72;
             // 
             // numFakturaDataGridViewTextBoxColumn
             // 
@@ -962,7 +961,7 @@
             this.numFakturaDataGridViewTextBoxColumn.HeaderText = "Numer faktury";
             this.numFakturaDataGridViewTextBoxColumn.Name = "numFakturaDataGridViewTextBoxColumn";
             this.numFakturaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numFakturaDataGridViewTextBoxColumn.Width = 94;
+            this.numFakturaDataGridViewTextBoxColumn.Width = 105;
             // 
             // dataFakturaDataGridViewTextBoxColumn
             // 
@@ -970,7 +969,7 @@
             this.dataFakturaDataGridViewTextBoxColumn.HeaderText = "Data faktury";
             this.dataFakturaDataGridViewTextBoxColumn.Name = "dataFakturaDataGridViewTextBoxColumn";
             this.dataFakturaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataFakturaDataGridViewTextBoxColumn.Width = 85;
+            this.dataFakturaDataGridViewTextBoxColumn.Width = 96;
             // 
             // Delete
             // 
@@ -1041,20 +1040,9 @@
             this.lnkRefresh.UseSelectable = true;
             this.lnkRefresh.Click += new System.EventHandler(this.lnkRefresh_Click);
             // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(307, 238);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(42, 23);
-            this.metroButton1.TabIndex = 11;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
             // ucProduct
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnPrint);
@@ -1138,6 +1126,5 @@
         private MetroFramework.Controls.MetroButton btnPrint;
         private MetroFramework.Controls.MetroLabel lblTotal;
         private MetroFramework.Controls.MetroLabel lblPosition;
-        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

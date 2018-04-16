@@ -37,15 +37,15 @@ namespace MagZamotane4
 
         private void loading()
         {
-            try
-            {
+          //  try
+          //  {
                 frmLoadData frm = new frmLoadData();
                 Application.Run(frm);
-            }
-            catch (ThreadAbortException ex)
-            {
-                Thread.ResetAbort();
-            }
+         //   }
+         //   catch (ThreadAbortException ex)
+         //   {
+         //      Thread.ResetAbort();
+         //   }
 
         }
 
@@ -55,10 +55,10 @@ namespace MagZamotane4
             try
             {
                 t.Start();
-           //     metroGrid.ColumnHeadersVisible = false;
+                metroGrid.ColumnHeadersVisible = false;
                 productBindingSource.ResetBindings(false);
                 productBindingSource.DataSource = products;
-          //      metroGrid.ColumnHeadersVisible = true;
+                metroGrid.ColumnHeadersVisible = true;
                 productBindingSource.MoveFirst();
                 fillAutoCompleteCustomSource();
                
@@ -75,7 +75,7 @@ namespace MagZamotane4
                 // Abort Thread.
                 t.Abort();
                 // Wait for the thread to terminate.
-                t.Join();
+              //  t.Join();
             }
         }
 
@@ -123,7 +123,8 @@ namespace MagZamotane4
 
                 if (!string.IsNullOrEmpty(p.NumFaktura))
                 {
-                    acInvoiceNumber.Add(p.NumFaktura);
+                   // acInvoiceNumber.Add(p.NumFaktura);
+                    acInvoiceNumber.Insert(0, p.NumFaktura);
                     txtInvoiceNumber.AutoCompleteCustomSource = acInvoiceNumber;
                 }
             }
@@ -622,22 +623,6 @@ namespace MagZamotane4
             lblPosition.Text = string.Format("Pozycja: {0}", this.productBindingSource.Position + 1);
         }
 
-        private void save()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(10);
-            }
-        }
 
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            using (var waitForm = new frmWait(save))
-            {
-                waitForm.Info = "Trwa zapisywanie danych...";
-                waitForm.ShowDialog(this);
-            }
-
-        }
     }
 }
