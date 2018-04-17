@@ -56,14 +56,14 @@ namespace MagZamotane4
             if (!frmDashboard.Instance.MetroContainer.Controls.ContainsKey("ucProduct"))
             {
                 ucProduct uc = new ucProduct();
-                uc.setAllProduct(frmDashboard.Instance.Products);
+                uc.setAllProduct(frmDashboard.Instance.Products, true);
                 uc.Dock = DockStyle.Fill;
                 frmDashboard.Instance.MetroContainer.Controls.Add(uc);
             }
             else
             {
                 ucProduct uc = (frmDashboard.Instance.MetroContainer.Controls["ucProduct"]) as ucProduct;
-                uc.setAllProduct(frmDashboard.Instance.Products);
+                uc.setAllProduct(frmDashboard.Instance.Products, false);
             }
             frmDashboard.Instance.MetroContainer.Controls["ucProduct"].BringToFront();
             frmDashboard.Instance.MetroBack.Visible = true;

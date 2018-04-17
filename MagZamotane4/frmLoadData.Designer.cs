@@ -40,6 +40,7 @@
             this.metroProgressSpinner.Maximum = 100;
             this.metroProgressSpinner.Name = "metroProgressSpinner";
             this.metroProgressSpinner.Size = new System.Drawing.Size(134, 134);
+            this.metroProgressSpinner.Spinning = false;
             this.metroProgressSpinner.TabIndex = 0;
             this.metroProgressSpinner.UseSelectable = true;
             // 
@@ -54,7 +55,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 16;
+            this.timer1.Interval = 5;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmLoadData
@@ -76,6 +77,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLoadData_FormClosing);
             this.Load += new System.EventHandler(this.frmLoadData_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

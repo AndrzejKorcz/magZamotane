@@ -24,7 +24,7 @@ namespace MagZamotane4
             if (!frmDashboard.Instance.MetroContainer.Controls.ContainsKey("ucProduct"))
             {
                 ucProduct uc = new ucProduct();
-                uc.setAllProduct(frmDashboard.Instance.Products);
+                uc.setAllProduct(frmDashboard.Instance.Products, true);
                 uc.Dock = DockStyle.Fill;
                 frmDashboard.Instance.MetroContainer.Controls.Add(uc);            
             } else
@@ -32,7 +32,7 @@ namespace MagZamotane4
                 if (frmDashboard.Instance.refreshData)
                 {
                     ucProduct uc = (frmDashboard.Instance.MetroContainer.Controls["ucProduct"]) as ucProduct;
-                    uc.setAllProduct(frmDashboard.Instance.Products);                
+                    uc.setAllProduct(frmDashboard.Instance.Products, false);                
                 }
             }
             frmDashboard.Instance.refreshData = false;

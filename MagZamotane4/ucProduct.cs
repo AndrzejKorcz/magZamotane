@@ -35,23 +35,22 @@ namespace MagZamotane4
 
         #region UI public methods
 
-        private void loading()
+        private static frmLoadData _splash = null;
+        public static void CloseSplash()
         {
-          //  try
-          //  {
-                frmLoadData frm = new frmLoadData();
-                Application.Run(frm);
-         //   }
-         //   catch (ThreadAbortException ex)
-         //   {
-         //      Thread.ResetAbort();
-         //   }
-
+            if (_splash != null)
+            {
+                _splash.CloseSplash();
+            }
         }
 
-        public void setAllProduct(List<Product> products)
-        {         
-            Thread t = new Thread(new ThreadStart(loading));
+        public void setAllProduct(List<Product> products, bool autoCompleteCustomSource)
+        {
+            Thread t = new Thread(new ThreadStart(delegate
+            {
+                _splash = new frmLoadData();
+                _splash.ShowDialog();
+            }));
             try
             {
                 t.Start();
@@ -60,6 +59,7 @@ namespace MagZamotane4
                 productBindingSource.DataSource = products;
                 metroGrid.ColumnHeadersVisible = true;
                 productBindingSource.MoveFirst();
+                if (autoCompleteCustomSource)
                 fillAutoCompleteCustomSource();
                
                 pnlContainer.Enabled = false;
@@ -72,22 +72,13 @@ namespace MagZamotane4
             }
             finally
             {
-                // Abort Thread.
-                t.Abort();
-                // Wait for the thread to terminate.
-              //  t.Join();
+                _splash.CloseSplash();
             }
         }
 
         #endregion
 
         #region UI private methods
-
-        private void Loading()
-        {
-            frmSplashScreen frm = new frmSplashScreen();
-            Application.Run(frm);
-        }
 
         private void addAutoCompleteCustomSource(Product p)
         {
@@ -123,8 +114,7 @@ namespace MagZamotane4
 
                 if (!string.IsNullOrEmpty(p.NumFaktura))
                 {
-                   // acInvoiceNumber.Add(p.NumFaktura);
-                    acInvoiceNumber.Insert(0, p.NumFaktura);
+                    acInvoiceNumber.Add(p.NumFaktura);
                     txtInvoiceNumber.AutoCompleteCustomSource = acInvoiceNumber;
                 }
             }
@@ -158,7 +148,7 @@ namespace MagZamotane4
         {
             if (string.IsNullOrEmpty(searchText))
             {
-                setAllProduct(frmDashboard.Instance.Products);
+                setAllProduct(frmDashboard.Instance.Products, false);
             }
             else
             {
