@@ -47,7 +47,7 @@ namespace MagZamotane4.DataAccess
                     db.Open();
                     DynamicParameters p = new DynamicParameters();
                     p.Add("@Identyfikator", dbType: DbType.Int32, direction: ParameterDirection.Output);
-                    p.AddDynamicParams(new { Nazwa = obj.Nazwa, Kod = obj.Kod, Cena = obj.Cena, CenaNetto = obj.CenaNetto, CenaBrutto = obj.CenaBrutto, Vat = obj.Vat, Marza = obj.Marza, Wartosc = obj.Wartosc, Jednostka = obj.Jednostka, Ilosc = obj.Ilosc, NumFaktura = obj.NumFaktura, DataFaktura = obj.DataFaktura, Obrazek = obj.Obrazek });
+                    p.AddDynamicParams(new { Nazwa = obj.Nazwa, Kod = obj.Kod, Cena = obj.Cena, CenaNetto = obj.CenaNetto, CenaBrutto = obj.CenaBrutto, Vat = obj.Vat, Marza = obj.Marza, Wartosc = obj.Wartosc, Jednostka = obj.Jednostka, Ilosc = obj.Ilosc, NumFaktura = obj.NumFaktura, DataFaktura = obj.DataFaktura, Obrazek = obj.Obrazek, Inwentura = obj.Inwentura });
                     db.Execute("sp_Produkty_Insert", p, commandType: CommandType.StoredProcedure);
                     return p.Get<int>("@Identyfikator");
             }
@@ -59,7 +59,7 @@ namespace MagZamotane4.DataAccess
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
-                int result = db.Execute("sp_Produkty_Update", new { Identyfikator = obj.Identyfikator, Nazwa = obj.Nazwa, Kod = obj.Kod, Cena = obj.Cena, CenaNetto = obj.CenaNetto, CenaBrutto = obj.CenaBrutto, Vat = obj.Vat, Marza = obj.Marza, Wartosc = obj.Wartosc, Jednostka = obj.Jednostka, Ilosc = obj.Ilosc, NumFaktura = obj.NumFaktura, DataFaktura = obj.DataFaktura, Obrazek = obj.Obrazek }, commandType: CommandType.StoredProcedure);
+                int result = db.Execute("sp_Produkty_Update", new { Identyfikator = obj.Identyfikator, Nazwa = obj.Nazwa, Kod = obj.Kod, Cena = obj.Cena, CenaNetto = obj.CenaNetto, CenaBrutto = obj.CenaBrutto, Vat = obj.Vat, Marza = obj.Marza, Wartosc = obj.Wartosc, Jednostka = obj.Jednostka, Ilosc = obj.Ilosc, NumFaktura = obj.NumFaktura, DataFaktura = obj.DataFaktura, Obrazek = obj.Obrazek, Inwentura = obj.Inwentura }, commandType: CommandType.StoredProcedure);
                 return result != 0;
             }
         }

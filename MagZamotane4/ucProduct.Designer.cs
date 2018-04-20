@@ -43,6 +43,8 @@
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblVat = new MetroFramework.Controls.MetroLabel();
             this.pnlContainer = new MetroFramework.Controls.MetroPanel();
+            this.lblStocktaking = new MetroFramework.Controls.MetroLabel();
+            this.chbStocktaking = new MetroFramework.Controls.MetroCheckBox();
             this.lnkClrImage = new MetroFramework.Controls.MetroLink();
             this.pic = new System.Windows.Forms.PictureBox();
             this.lblPicturePath = new MetroFramework.Controls.MetroLabel();
@@ -258,6 +260,8 @@
             this.pnlContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContainer.Controls.Add(this.lblStocktaking);
+            this.pnlContainer.Controls.Add(this.chbStocktaking);
             this.pnlContainer.Controls.Add(this.lnkClrImage);
             this.pnlContainer.Controls.Add(this.pic);
             this.pnlContainer.Controls.Add(this.lblPicturePath);
@@ -291,11 +295,35 @@
             this.pnlContainer.HorizontalScrollbarSize = 10;
             this.pnlContainer.Location = new System.Drawing.Point(3, 3);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(787, 220);
+            this.pnlContainer.Size = new System.Drawing.Size(1036, 220);
             this.pnlContainer.TabIndex = 0;
             this.pnlContainer.VerticalScrollbarBarColor = true;
             this.pnlContainer.VerticalScrollbarHighlightOnWheel = false;
             this.pnlContainer.VerticalScrollbarSize = 10;
+            // 
+            // lblStocktaking
+            // 
+            this.lblStocktaking.AutoSize = true;
+            this.lblStocktaking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblStocktaking.Location = new System.Drawing.Point(789, 15);
+            this.lblStocktaking.Name = "lblStocktaking";
+            this.lblStocktaking.Size = new System.Drawing.Size(97, 19);
+            this.lblStocktaking.TabIndex = 20;
+            this.lblStocktaking.Text = "Inwentaryzacja:";
+            this.lblStocktaking.UseCustomBackColor = true;
+            // 
+            // chbStocktaking
+            // 
+            this.chbStocktaking.AutoSize = true;
+            this.chbStocktaking.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.productBindingSource, "Inwentura", true));
+            this.chbStocktaking.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.chbStocktaking.Location = new System.Drawing.Point(896, 16);
+            this.chbStocktaking.Name = "chbStocktaking";
+            this.chbStocktaking.Size = new System.Drawing.Size(112, 19);
+            this.chbStocktaking.TabIndex = 14;
+            this.chbStocktaking.TabStop = false;
+            this.chbStocktaking.Text = "zweryfkowano";
+            this.chbStocktaking.UseSelectable = true;
             // 
             // lnkClrImage
             // 
@@ -860,7 +888,7 @@
             this.metroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid.RowTemplate.Height = 28;
             this.metroGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid.Size = new System.Drawing.Size(785, 164);
+            this.metroGrid.Size = new System.Drawing.Size(1034, 177);
             this.metroGrid.TabIndex = 8;
             this.metroGrid.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid_CellContentDoubleClick);
             this.metroGrid.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.metroGrid_ColumnHeaderMouseClick);
@@ -982,7 +1010,7 @@
             // btnPrint
             // 
             this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.Location = new System.Drawing.Point(712, 238);
+            this.btnPrint.Location = new System.Drawing.Point(961, 238);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 9;
@@ -994,7 +1022,7 @@
             // 
             this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(5, 446);
+            this.lblTotal.Location = new System.Drawing.Point(5, 459);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(119, 19);
             this.lblTotal.TabIndex = 10;
@@ -1004,7 +1032,7 @@
             // 
             this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Location = new System.Drawing.Point(140, 446);
+            this.lblPosition.Location = new System.Drawing.Point(140, 459);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(66, 19);
             this.lblPosition.TabIndex = 10;
@@ -1056,7 +1084,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.metroGrid);
             this.Name = "ucProduct";
-            this.Size = new System.Drawing.Size(796, 472);
+            this.Size = new System.Drawing.Size(1045, 485);
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
@@ -1126,5 +1154,7 @@
         private MetroFramework.Controls.MetroButton btnPrint;
         private MetroFramework.Controls.MetroLabel lblTotal;
         private MetroFramework.Controls.MetroLabel lblPosition;
+        private MetroFramework.Controls.MetroLabel lblStocktaking;
+        private MetroFramework.Controls.MetroCheckBox chbStocktaking;
     }
 }

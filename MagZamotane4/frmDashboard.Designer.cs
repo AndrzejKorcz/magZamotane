@@ -66,7 +66,7 @@
             this.panel.HorizontalScrollbarSize = 10;
             this.panel.Location = new System.Drawing.Point(6, 71);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(970, 539);
+            this.panel.Size = new System.Drawing.Size(1013, 539);
             this.panel.TabIndex = 4;
             this.panel.VerticalScrollbarBarColor = true;
             this.panel.VerticalScrollbarHighlightOnWheel = false;
@@ -79,19 +79,19 @@
             this.pokarzToolStripMenuItem,
             this.zakończToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(168, 64);
+            this.contextMenuStrip.Size = new System.Drawing.Size(155, 64);
             // 
             // pokarzToolStripMenuItem
             // 
             this.pokarzToolStripMenuItem.Name = "pokarzToolStripMenuItem";
-            this.pokarzToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.pokarzToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.pokarzToolStripMenuItem.Text = "Wyświetl";
             this.pokarzToolStripMenuItem.Click += new System.EventHandler(this.pokarzToolStripMenuItem_Click);
             // 
             // zakończToolStripMenuItem
             // 
             this.zakończToolStripMenuItem.Name = "zakończToolStripMenuItem";
-            this.zakończToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.zakończToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.zakończToolStripMenuItem.Text = "Zakończ";
             this.zakończToolStripMenuItem.Click += new System.EventHandler(this.zakończToolStripMenuItem_Click);
             // 
@@ -100,13 +100,12 @@
             this.notifyIcon.ContextMenuStrip = this.contextMenuStrip;
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
             this.notifyIcon.Text = "Ustawienia";
-            //this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
             // frmDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(981, 629);
+            this.ClientSize = new System.Drawing.Size(1024, 629);
             this.Controls.Add(this.lblBack);
             this.Controls.Add(this.panel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -152,7 +152,15 @@ namespace MagZamotane4
             }
             else
             {
-              productBindingSource.DataSource = QueryByKey(1, searchText).ToList();
+                productBindingSource.DataSource = QueryByKey(1, searchText).ToList();
+                if(productBindingSource.Count == 0)
+                {
+                    Product product = new Product();
+                    List<Product> products = new List<Product>();
+                    products.Add(product);
+                    productBindingSource.DataSource = products;
+                    productBindingSource.RemoveCurrent();
+                }
             }
         }
 
@@ -242,13 +250,15 @@ namespace MagZamotane4
                     {
                         bool result = ProductService.Delete(obj.Identyfikator);
                         if (result)
-                        {
-                            productBindingSource.RemoveCurrent();
+                        {             
                             var index = productBindingSource.IndexOf(productBindingSource.Current);
-                            metroGrid.Rows[index].Selected = true;                         
+                            metroGrid.Rows[index].Selected = true;
+                            productBindingSource.RemoveCurrent();
+                            var _obj = frmDashboard.Instance.Products.Find(obj.Equals);
+                            if (_obj != null) frmDashboard.Instance.Products.Remove(obj);
                             metroGrid.Refresh();
                             pnlContainer.Enabled = false;
-                            //pic.Image = null;
+                            //pic.Image = null; dupa
                             objState = EntityState.Unchanged;
                         }
                     }
@@ -290,6 +300,8 @@ namespace MagZamotane4
                 objState = EntityState.Added;
                 pic.Image = null;
                 pnlContainer.Enabled = true;
+                metroGrid.Enabled = false;
+                txtSearch.Enabled = false;
                 productBindingSource.Add(new Product());
                 productBindingSource.MoveLast();
                 txtCode.Focus();
@@ -314,7 +326,10 @@ namespace MagZamotane4
             }
 
             pnlContainer.Enabled = false;
+            metroGrid.Enabled = true;
+            txtSearch.Enabled = true;
             generatedNumber = false;
+
             objState = EntityState.Unchanged;
         }
 
@@ -325,6 +340,8 @@ namespace MagZamotane4
             tmpobj = (productBindingSource.Current as Product).Clone();
             objState = EntityState.Changed;
             pnlContainer.Enabled = true;
+            metroGrid.Enabled = false;
+            txtSearch.Enabled = false;
             txtName.Focus();
             }
         }
@@ -349,16 +366,21 @@ namespace MagZamotane4
                         }
                         else obj = ProductService.Save(obj, objState);
                             showNotification("Informacja", "Pomyślnie wprowadzono zmiany do bazy danych");
+                            var _obj = frmDashboard.Instance.Products.Find(obj.Equals);
                             if (objState == EntityState.Added)
-                        {
-                            addAutoCompleteCustomSource(obj);
-                        }
-
-                        var _obj = frmDashboard.Instance.Products.Find(obj.Equals);
-                        _obj = obj;
+                            {
+                               if (_obj == null) frmDashboard.Instance.Products.Add(obj);
+                               addAutoCompleteCustomSource(obj);                           
+                             }
+                            if (objState == EntityState.Changed)
+                            {                               
+                                _obj = obj;
+                            }
                        
                         metroGrid.Refresh();
-                        pnlContainer.Enabled = false ;
+                        pnlContainer.Enabled = false;
+                        metroGrid.Enabled = true;
+                        txtSearch.Enabled = true;
                         objState = EntityState.Unchanged;
 
                         } else

@@ -22,7 +22,7 @@ namespace MagZamotane4.Core
         public string NumFaktura { get; set; }
         public string DataFaktura { get; set; }
         public string Obrazek { get; set; }
-
+        public string Inwentura { get; set; }
 
         public Product Clone()
         {
@@ -41,6 +41,7 @@ namespace MagZamotane4.Core
             obj.NumFaktura = this.NumFaktura;
             obj.DataFaktura = this.DataFaktura;
             obj.Obrazek = this.Obrazek;
+            obj.Inwentura = this.Inwentura;
             return obj;
         }
         public void Copy(Product obj)
@@ -59,6 +60,7 @@ namespace MagZamotane4.Core
             this.NumFaktura = obj.NumFaktura;
             this.DataFaktura = obj.DataFaktura;
             this.Obrazek = obj.Obrazek;
+            this.Inwentura = obj.Inwentura;
         }
     }
 }
