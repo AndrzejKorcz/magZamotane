@@ -9,6 +9,11 @@ namespace MagZamotane4.DataAccess
 {
     public class ProductRepository_accdb : IProductRepository
     {
+        public bool ClearStocktaking()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void Conect()
         {
             using (OleDbConnection db = new OleDbConnection(Helper.ConnectionString("kody_kreskowe_accdb")))

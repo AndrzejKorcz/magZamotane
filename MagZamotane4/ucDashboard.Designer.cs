@@ -34,6 +34,7 @@
             this.mtWebBrowser = new MetroFramework.Controls.MetroTile();
             this.mtProduct = new MetroFramework.Controls.MetroTile();
             this.mtBarCodes = new MetroFramework.Controls.MetroTile();
+            this.mtStocktaking = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // mtBackupDB
@@ -121,9 +122,28 @@
             this.mtBarCodes.UseTileImage = true;
             this.mtBarCodes.Click += new System.EventHandler(this.mtBarCodes_Click);
             // 
+            // mtStocktaking
+            // 
+            this.mtStocktaking.ActiveControl = null;
+            this.mtStocktaking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.mtStocktaking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.mtStocktaking.Location = new System.Drawing.Point(375, 161);
+            this.mtStocktaking.Name = "mtStocktaking";
+            this.mtStocktaking.Size = new System.Drawing.Size(153, 134);
+            this.mtStocktaking.TabIndex = 9;
+            this.mtStocktaking.Text = "Inwentaryzacja";
+            this.mtStocktaking.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.mtStocktaking.TileImage = ((System.Drawing.Image)(resources.GetObject("mtStocktaking.TileImage")));
+            this.mtStocktaking.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mtStocktaking.UseCustomBackColor = true;
+            this.mtStocktaking.UseSelectable = true;
+            this.mtStocktaking.UseTileImage = true;
+            this.mtStocktaking.Click += new System.EventHandler(this.mtStocktaking_Click);
+            // 
             // ucDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.mtStocktaking);
             this.Controls.Add(this.mtBackupDB);
             this.Controls.Add(this.mtSale);
             this.Controls.Add(this.mtWebBrowser);
@@ -131,7 +151,7 @@
             this.Controls.Add(this.mtBarCodes);
             this.Name = "ucDashboard";
             this.Size = new System.Drawing.Size(757, 453);
-            this.VisibleChanged += new System.EventHandler(this.ucDashboard_VisibleChanged);
+            this.Load += new System.EventHandler(this.ucDashboard_Load);
             this.ResumeLayout(false);
 
         }
@@ -143,5 +163,6 @@
         private MetroFramework.Controls.MetroTile mtWebBrowser;
         private MetroFramework.Controls.MetroTile mtProduct;
         private MetroFramework.Controls.MetroTile mtBarCodes;
+        private MetroFramework.Controls.MetroTile mtStocktaking;
     }
 }

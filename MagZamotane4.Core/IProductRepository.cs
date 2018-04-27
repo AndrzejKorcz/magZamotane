@@ -15,5 +15,6 @@ namespace MagZamotane4.Core
         bool Delete(int Identyfikator);
         void Conect();
         void Disconnect();
+        bool ClearStocktaking();
     }
 }

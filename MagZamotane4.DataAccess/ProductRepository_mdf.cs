@@ -91,5 +91,18 @@ namespace MagZamotane4.DataAccess
                     db.Open();               
             }
         }
+
+        public bool ClearStocktaking()
+        {
+            using (IDbConnection db = new SqlConnection(Helper.ConnectionString("kody_kreskowe_mdf")))
+            {
+
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                int result = db.Execute("sp_Produkty_ClearStocktaking", commandType: CommandType.StoredProcedure);
+                return result != 0;
+            }
+        }
     }
 }

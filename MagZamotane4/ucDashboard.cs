@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Configuration;
+using MagZamotane4.Services;
 
 namespace MagZamotane4
 {
@@ -107,8 +109,72 @@ namespace MagZamotane4
             frmDashboard.Instance.setPage("ucDashboard");
         }
 
-        private void ucDashboard_VisibleChanged(object sender, EventArgs e)
+        private void checkStocktaking()
         {
+            var stockTaking = frmDashboard.Instance.stockTaking;           
+            var newMode = !stockTaking ? "Rozpocznij" : "Zakończ";
+            String text = String.Format("{0} inwenturę", newMode);
+            mtStocktaking.Text = text;
+            mtStocktaking.BackColor = stockTaking ? Color.Firebrick : Color.ForestGreen;
+            mtStocktaking.Refresh();
+        }
+
+        private void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, ex.Message, "Komunikat błędu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+  
+
+        private void mtStocktaking_Click(object sender, EventArgs e)
+        {
+            var newStockTaking = !frmDashboard.Instance.stockTaking;
+            var newMode = newStockTaking ? "rozpocząć" : "zakończyć";
+            String question = String.Format("Czy na pewno chcesz {0} inwentaryzację? Potwierdzenie spowoduje restart programu.",
+                         newMode);
+
+            if (MetroFramework.MetroMessageBox.Show(this, question, "Konieczne potwierdzenie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if(newStockTaking)
+                {
+                    var result = ProductService.ClearStocktaking();
+                    if (result) 
+                    MetroFramework.MetroMessageBox.Show(this, "Weryfikacja towarów w ramach inwentaryzacji została wyzerowana. Oznacza to, że wszystkie inwentaryzowane towary będzie trzeba sprawdzić od nowa.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                AddUpdateAppSettings("Stocktaking", newStockTaking.ToString());
+
+                Application.Restart();
+                Environment.Exit(0);
+
+
+
+                //frmDashboard.Instance.stockTaking = newStockTaking;
+                //checkStocktaking();
+            }
+        }
+
+      
+
+        private void ucDashboard_Load(object sender, EventArgs e)
+        {
+           checkStocktaking();
         }
     }
 }

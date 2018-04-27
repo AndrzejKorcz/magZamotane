@@ -54,5 +54,10 @@ namespace MagZamotane4.Services
             _container.Resolve<IProductRepository>().Conect();
         }
 
+        public static bool ClearStocktaking()
+        {
+            return _container.Resolve<IProductRepository>().ClearStocktaking();
+        }
+
     }
 }

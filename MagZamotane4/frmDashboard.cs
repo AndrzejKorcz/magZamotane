@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace MagZamotane4
 {
@@ -40,6 +41,8 @@ namespace MagZamotane4
             get { return lblBack; }
             set { lblBack = value; }
         }
+
+        public bool stockTaking { get; set; }
 
         public List<Product> Products { get; set;  }
 
@@ -76,13 +79,32 @@ namespace MagZamotane4
             frm.ShowDialog();
         }
 
+        private bool result; //
+
+        private Boolean readSetting(string key)
+        {
+            var result = false;
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+                result = Convert.ToBoolean(appSettings[key] ?? "false");
+            }
+            catch (ConfigurationErrorsException ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, ex.Message, "Komunikat błędu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return result;
+        }
+
+
         private void frmDashboard_Load(object sender, EventArgs e)
         {
             _instance = this;
             lblBack.Visible = false;
 
             getAllProducts();
-                 
+            stockTaking = readSetting("Stocktaking");
             ucDashboard uc = new ucDashboard();
             uc.Dock = DockStyle.Fill;
             panel.Controls.Add(uc);

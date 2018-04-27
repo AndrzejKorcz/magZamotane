@@ -302,6 +302,7 @@ namespace MagZamotane4
                 pnlContainer.Enabled = true;
                 metroGrid.Enabled = false;
                 txtSearch.Enabled = false;
+                chbStocktaking.CheckState = CheckState.Unchecked;
                 productBindingSource.Add(new Product());
                 productBindingSource.MoveLast();
                 txtCode.Focus();
@@ -635,6 +636,13 @@ namespace MagZamotane4
             lblPosition.Text = string.Format("Pozycja: {0}", this.productBindingSource.Position + 1);
         }
 
+   
 
+        private void ucProduct_Load(object sender, EventArgs e)
+        {
+            var visible = frmDashboard.Instance.stockTaking;
+            chbStocktaking.Visible = visible;
+            lblStocktaking.Visible = visible;
+        }
     }
 }
